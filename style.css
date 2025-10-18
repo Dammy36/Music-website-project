@@ -17,6 +17,11 @@ html {
   max-width: 1040px;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 header {
   background: linear-gradient(
       rgba(3, 5, 4, 0.6),
@@ -76,5 +81,55 @@ header a {
   header p {
     line-height: 1.2;
     font-size: 1rem;
+  }
+}
+
+footer {
+  background: linear-gradient(rgba(2, 4, 3, 0.9), rgba(2, 4, 3, 0.9)),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/977/original/Adele2.jpg?1760802414);
+  background-position: center 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 10px;
+  padding: 3rem 1rem;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: Bold;
+  line-height: 1.5;
+  letter-spacing: 0%;
+}
+
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+
+  text-decoration: underline;
+}
+
+.footer-contents {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+@media (max-width: 900px) {
+  footer h3 {
+    line-height: 1.2;
+  }
+  .footer-container {
+    padding: 3rem 1rem;
   }
 }
