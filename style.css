@@ -14,12 +14,13 @@ html {
 }
 .container {
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1200px;
 }
 
 section {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 100px 0;
 }
 
 header {
@@ -55,7 +56,8 @@ header p {
   font-size: 1.5rem;
 }
 
-header a {
+header a,
+main a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
@@ -69,19 +71,43 @@ header a {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-  header {
-    padding: 5rem 0;
-  }
-  h1 {
-    font-weight: 900;
-    font-size: 5rem;
-    line-height: 1.5;
-  }
-  header p {
-    line-height: 1.2;
-    font-size: 1rem;
-  }
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: 0%;
+}
+
+main p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  line-height: 1.5;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.img-class {
+  max-width: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 footer {
@@ -95,8 +121,8 @@ footer {
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 10px;
-  padding: 3rem 1rem;
+  gap: 3rem;
+  padding: 2rem 1rem;
 }
 
 footer h3 {
@@ -126,10 +152,40 @@ footer a {
 }
 
 @media (max-width: 900px) {
+  header {
+    padding: 5rem 0;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 1.5;
+  }
+  header p {
+    line-height: 1.2;
+    font-size: 1rem;
+  }
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 2rem 0.6rem;
+  }
+
+  main h3 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 900px) {
   footer h3 {
     line-height: 1.2;
   }
   .footer-container {
-    padding: 3rem 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 0.6rem;
   }
 }
