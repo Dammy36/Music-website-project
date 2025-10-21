@@ -129,13 +129,18 @@ main p {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.secondry-h2 {
-  color: rgba(255, 255, 255, 1);
-}
 
-.secondry-h2,
-.secondry-h3 {
+.section-grid {
   text-align: center;
+  list-style: 1.5;
+}
+.secondry-h2 {
+  color: rgba(91, 213, 227, 1);
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 5px;
+  background-color: rgb(87, 98, 99);
 }
 
 .secondry .grid-3 {
@@ -190,6 +195,20 @@ hr {
 
 main .card-contents a {
   width: 100%;
+}
+
+.more-song-grid {
+  margin-top: 2rem;
+}
+.grid-3 iframe {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.grid-3 iframe {
+  width: 400px;
+  height: 400px;
+  aspect-ratio: 16/9;
 }
 
 footer {
@@ -262,7 +281,7 @@ footer a {
     line-height: 1.2;
   }
 
-  .secondry .grid-3 {
+  .secondry .grid-3 iframe {
     grid-template-columns: 1fr;
     gap: 10px;
   }
@@ -270,6 +289,9 @@ footer a {
   .secondry-h2,
   .secondry-h3 {
     font-size: 2rem;
+  }
+  .grid-3 iframe {
+    aspect-ratio: 1/1;
   }
 }
 
